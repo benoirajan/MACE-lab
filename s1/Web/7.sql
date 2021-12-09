@@ -41,3 +41,10 @@ ALTER TABLE
 
 
 c.
+INSERT INTO `department`( `dname`, `dhod`) 
+VALUES ('Sales','James'),('Marketing', 'John'),('Finance', 'Joel')
+
+INSERT INTO `employee`(`name`, `did`, `salary`)
+VALUES('Biby', 1, 10000),('Tom', 2, 100500),('Nandu', 3, 50000)
+UPDATE `employee` SET eid = eid+4
+
