@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art</title>
+</head>
+
+<body>
+    <h1>Artwork Insert</h1>
+    <form method="post" action="insert.php">
+        <table class="insertRowTable topmargin">
+            
+            <tfoot>
+                <tr>
+                    <th colspan="5" class="tblFooters right">
+                        <input class="btn btn-primary" name="art" type="submit" value="Insert">
+                    </th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr class="noclick">
+                    <td class="center">Name<input type="hidden"
+                            name="fields_name[multi_edit][0][b068931cc450442b63f5b3d276ea4297]" value="name"></td>
+
+                    <td data-type="varchar" data-decimals="40">
+                        <span class="default_value hide"></span>
+                        <input type="text" name="name" value=""
+                            size="40" data-maxlength="40" data-type="CHAR" class="textfield"
+                            onchange="return verificationsAfterFieldChange('b068931cc450442b63f5b3d276ea4297', '0','varchar(40)')"
+                            tabindex="1" id="field_1_3">
+                    </td>
+                </tr>
+                <tr class="noclick">
+                    <td class="center">Date<input type="hidden"
+                            name="fields_name[multi_edit][0][5fc732311905cb27e82d67f4f6511f7f]" value="date"></td>
+
+                    <td data-type="date" data-decimals="0">
+                        <span class="default_value hide"></span>
+                        <input type="date" name="date" value=""
+                            size="10" data-type="DATE" class="textfield datefield hasDatepicker"
+                            onchange="return verificationsAfterFieldChange('5fc732311905cb27e82d67f4f6511f7f', '0','date')"
+                            tabindex="2" id="field_2_3" title="Date">
+                    </td>
+                </tr>
+                <tr class="noclick">
+                    <td class="center">Style<input type="hidden"
+                            name="fields_name[multi_edit][0][a1b01e734b573fca08eb1a65e6df9a38]" value="style"></td>
+
+                    <td data-type="varchar" data-decimals="20">
+                        <span class="default_value hide"></span>
+                        <input type="text" name="style" value=""
+                            size="20" data-maxlength="20" data-type="CHAR" class="textfield"
+                            onchange="return verificationsAfterFieldChange('a1b01e734b573fca08eb1a65e6df9a38', '0','varchar(20)')"
+                            tabindex="3" id="field_3_3">
+                    </td>
+                </tr>
+                <tr class="noclick">
+                    <td class="center">Type<input type="hidden"
+                            name="type" value="type"></td>
+
+                    <td data-type="varchar" data-decimals="20">
+                        <span class="default_value hide"></span>
+                        <input type="text" name="type" value=""
+                            size="20" data-maxlength="20" data-type="CHAR" class="textfield"
+                            onchange="return verificationsAfterFieldChange('599dcce2998a6b40b1e38e8c6006cb0a', '0','varchar(20)')"
+                            tabindex="4" id="field_4_3">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>

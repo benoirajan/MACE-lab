@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer insert</title>
+</head>
+
+<body>
+    <h1>Customer Insert</h1>
+    <form method="post" action="insert.php">
+        <table class="insertRowTable topmargin">
+            <tbody>
+                
+                <tr class="noclick">
+                    <td class="center">Name</td>
+
+                    <td data-type="varchar" data-decimals="30">
+                        <span class="default_value hide"></span>
+                        <input type="text" name="name" value=""
+                            size="30" data-maxlength="30" data-type="CHAR" class="textfield"
+                            onchange="return verificationsAfterFieldChange('b068931cc450442b63f5b3d276ea4297', '0','varchar(30)')"
+                            tabindex="2" id="field_2_3">
+                    </td>
+                </tr>
+                <tr class="noclick">
+                    <td class="center">Address<input type="hidden"
+                            name="fields_name[multi_edit][0][884d9804999fc47a3c2694e49ad2536a]" value="address"></td>
+
+                    <td data-type="varchar" data-decimals="60">
+                        <span class="default_value hide"></span>
+                        <input type="text" name="address" value=""
+                            size="60" data-maxlength="60" data-type="CHAR" class="textfield"
+                            onchange="return verificationsAfterFieldChange('884d9804999fc47a3c2694e49ad2536a', '0','varchar(60)')"
+                            tabindex="3" id="field_3_3">
+                    </td>
+                </tr>
+                <tr class="noclick">
+                    <td class="center">Amount<input type="hidden"
+                            name="fields_name[multi_edit][0][e9f40e1f1d1658681dad2dac4ae0971e]" value="amount"></td>
+
+                    <td data-type="float" data-decimals="0">
+                        <span class="default_value hide"></span>
+                        <input type="number" name="amt" value=""
+                            size="60" data-type="NUMBER" class="textfield"
+                            onchange="return verificationsAfterFieldChange('e9f40e1f1d1658681dad2dac4ae0971e', '0','float')"
+                            tabindex="4" id="field_4_3">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button name="cust" value="in" type="submit" class="kidu">
+           <div>Insert</div> 
+        </button>
+    </form>
+</body>
+
+</html>

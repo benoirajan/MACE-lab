@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist</title>
+</head>
+
+<body>
+    <form method="post" action="insert.php">
+        <h1>Insert Artist</h1>
+        <table class="insertRowTable topmargin">
+            <tfoot>
+                <tr>
+                    <th colspan="5" class="tblFooters right">
+                        <button type="submit" name="artist" value="insert">Insert</button>
+                    </th>
+                </tr>
+            </tfoot>
+            <tbody>
+                
+                <tr class="noclick">
+                    <td class="center">Name<input type="hidden"
+                            name="fields_name[multi_edit][0][b068931cc450442b63f5b3d276ea4297]" value="name"></td>
+
+                    <td data-type="varchar" data-decimals="30">
+                        <span class="default_value hide"></span>
+                        <input type="text" name="name" value=""
+                            size="30" data-maxlength="30" data-type="CHAR" class="textfield"
+                            onchange="return verificationsAfterFieldChange('b068931cc450442b63f5b3d276ea4297', '0','varchar(30)')"
+                            tabindex="2" id="field_2_3">
+                    </td>
+                </tr>
+                <tr class="noclick">
+                    <td class="center">Experiance<input type="hidden"
+                            name="fields_name[multi_edit][0][b0ab0254bd58eb87eaee3172ba49fefb]" value="exp"></td>
+
+                    <td data-type="int" data-decimals="11">
+                        <span class="default_value hide"></span>
+                        <input type="number" name="exp" value="0"
+                            size="11" min="-2147483648" max="2147483647" data-type="INT" class="textfield"
+                            onchange="return verificationsAfterFieldChange('b0ab0254bd58eb87eaee3172ba49fefb', '0','int(11)')"
+                            tabindex="3" id="field_3_3">years
+                    </td>
+                </tr>
+                <tr class="noclick">
+                    <td class="center">Category<input type="hidden"
+                            name="fields_name[multi_edit][0][c4ef352f74e502ef5e7bc98e6f4e493d]" value="category"></td>
+
+                    <td data-type="varchar" data-decimals="10">
+                        <span class="default_value hide"></span>
+                        <input type="text" name="catgry" value=""
+                            size="10" data-maxlength="10" data-type="CHAR" class="textfield"
+                            onchange="return verificationsAfterFieldChange('c4ef352f74e502ef5e7bc98e6f4e493d', '0','varchar(10)')"
+                            tabindex="4" id="field_4_3">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>

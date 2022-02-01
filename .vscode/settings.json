@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "1MERSOR.C": "cpp"
+        "1MERSOR.C": "cpp",
+        "SETOPERA.C": "cpp"
     }
 }
