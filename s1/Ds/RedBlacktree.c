@@ -279,14 +279,11 @@ void delete (int data)
         }
 
         if ((!rPtr->child[0] || rPtr->child[0]->color == BLACK) &&
-            (!rPtr->child[1] || rPtr->child[1]->color == BLACK))
-        {
+            (!rPtr->child[1] || rPtr->child[1]->color == BLACK)){
           rPtr->color = RED;
         }
-        else
-        {
-          if (!rPtr->child[1] || rPtr->child[1]->color == BLACK)
-          {
+        else{
+          if (!rPtr->child[1] || rPtr->child[1]->color == BLACK){
             qPtr = rPtr->child[0];
             rPtr->color = RED;
             qPtr->color = BLACK;
@@ -299,36 +296,30 @@ void delete (int data)
           rPtr->child[1]->color = BLACK;
           stack[ht - 1]->child[1] = rPtr->child[0];
           rPtr->child[0] = stack[ht - 1];
-          if (stack[ht - 1] == root)
-          {
+          if (stack[ht - 1] == root){
             root = rPtr;
           }
-          else
-          {
+          else{
             stack[ht - 2]->child[dir[ht - 2]] = rPtr;
           }
           break;
         }
       }
-      else
-      {
+      else{
         rPtr = stack[ht - 1]->child[0];
         if (!rPtr)
           break;
 
-        if (rPtr->color == RED)
-        {
+        if (rPtr->color == RED){
           stack[ht - 1]->color = RED;
           rPtr->color = BLACK;
           stack[ht - 1]->child[0] = rPtr->child[1];
           rPtr->child[1] = stack[ht - 1];
 
-          if (stack[ht - 1] == root)
-          {
+          if (stack[ht - 1] == root){
             root = rPtr;
           }
-          else
-          {
+          else{
             stack[ht - 2]->child[dir[ht - 2]] = rPtr;
           }
           dir[ht] = 1;
@@ -339,14 +330,11 @@ void delete (int data)
           rPtr = stack[ht - 1]->child[0];
         }
         if ((!rPtr->child[0] || rPtr->child[0]->color == BLACK) &&
-            (!rPtr->child[1] || rPtr->child[1]->color == BLACK))
-        {
+            (!rPtr->child[1] || rPtr->child[1]->color == BLACK)) {
           rPtr->color = RED;
         }
-        else
-        {
-          if (!rPtr->child[0] || rPtr->child[0]->color == BLACK)
-          {
+        else{
+          if (!rPtr->child[0] || rPtr->child[0]->color == BLACK){
             qPtr = rPtr->child[1];
             rPtr->color = RED;
             qPtr->color = BLACK;
@@ -359,12 +347,10 @@ void delete (int data)
           rPtr->child[0]->color = BLACK;
           stack[ht - 1]->child[0] = rPtr->child[1];
           rPtr->child[1] = stack[ht - 1];
-          if (stack[ht - 1] == root)
-          {
+          if (stack[ht - 1] == root){
             root = rPtr;
           }
-          else
-          {
+          else{
             stack[ht - 2]->child[dir[ht - 2]] = rPtr;
           }
           break;
