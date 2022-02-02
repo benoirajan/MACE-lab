@@ -1,0 +1,30 @@
+.fs{
+	display: flex;
+	flex-flow: column;
+	width: fit-content;
+	padding: 10px;
+	border-radius: 8px;
+}
+.mbot{
+	margin-bottom: 8px;
+}
+body{
+	background: #ffffff;
+	font-family: calibri;
+}
+.fle{
+	margin-top: 1em;
+	display: flex;
+	justify-content: space-between;
+}
+button {
+    padding: 10px 14px;
+    background: #0c88df;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+}
+label{
+	font-weight: 200;
+}
