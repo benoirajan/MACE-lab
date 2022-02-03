@@ -1,3 +1,7 @@
+/**
+ * <h2>Output at:</h2>
+ * @link https://github.com/benoirajan/MACE-lab/tree/main/exam
+ */
 <?php
 $conn = mysqli_connect("localhost", "root", '', "test");
 // Check connection
