@@ -1,4 +1,5 @@
 <?php
+
 $id = $name = $brand = $cat = $price = '';
 if (isset($_POST["sub"])) {
     $id = htmlentities($_POST['pid']);
