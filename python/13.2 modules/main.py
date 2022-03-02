@@ -1,29 +1,26 @@
-from graphics import circle, rectangle
-from graphics.dgraphics import cuboid, sphere
+import operations
 
-print(circle.getarea(3))
-print(circle.getPerimeter(3))
+a = int(input("a="))
+b = int(input("b="))
 
-print(rectangle.getarea(3,6))
-print(rectangle.getarea(3,6))
+print('a+b=',operations.add(a,b))
+print('a-b=',operations.sub(a,b))
+print('a*b=',operations.mul(a,b))
+print('a/b=',operations.div(a,b))
 
-print(cuboid.getArea(3,6,2))
-print(cuboid.getVolume(3,6,2))
-
-print(sphere.getArea(3))
-print(sphere.getVolume(3))
-
-
-
+#question
+'''
+Create a module operations which has functions to add, subtract, multiply
+and divide integers. Write a program that import operations and perform all
+integer operations.
+'''
 #output
 """
-28.274333882308138
-18.84955592153876
-18
-18
-72
-36
-113.09733552923255
-113.09733552923254
+a=10
+b=5
+a+b=15
+a-b=5
+a*b=50
+a/b=2
 """
 
