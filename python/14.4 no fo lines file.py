@@ -1,5 +1,5 @@
 try:
-    file = open(input('Enter a file name'), 'r')
+    file = open(input('Enter a file name: '), 'r')
     print("Number of lines:",len(file.readlines()))
 except Exception(a):
     print(a)
@@ -12,5 +12,6 @@ Print no of lines in a file
 =================================================================================
 output:
 =======
-write complete
+Enter a file name: a.txt 
+Number of lines: 5
 """
