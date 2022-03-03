@@ -9,7 +9,7 @@ class Cuboid(Rect):
         self.d=d
         
     def getVol(self):
-        return self.l,self.b,self.d
+        return self.l*self.b*self.d
     
     def __le__(self,o):
         return self.getVol()<=o.getVol()
