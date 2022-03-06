@@ -75,6 +75,7 @@ void main() {
 /*
 output
 ======
+gcc "4 single linklist stack.c"
 10 inserted
 30 inserted
 20 inserted

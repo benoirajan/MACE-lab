@@ -39,8 +39,7 @@ void print() {
 
 //push link at the first location
 void push(int data) {
-    struct node *link;
-    link = (struct node*) malloc(sizeof(struct node));
+    struct node *link = (struct node*) malloc(sizeof(struct node));
     link->data = data;
     //point it to old first node
     link->next = head;
@@ -50,26 +49,43 @@ void push(int data) {
 }
 
 void main() {
-    push(10);
-    push(30);
-    push(20);
-    printf("Current state of stack:\n");
-    print();
-    pop();
-    printf("After deleting state of stack:\n");;
-    print();
+    int c = 1,v;
+    printf("enter choice (1,2 & 3 for push, pop & traverse):\n");
+    while (c>0 && c<4){
+        scanf("%d",&c);
+        switch (c){
+            case 1:
+                printf("enter value: ");
+                scanf("%d",&v);
+                push(v);
+                break;
+            case 2:
+                pop();
+                break;
+            case 3:
+                print();
+        }
+    }
 }
 
 
 /*
 output
 ======
-10 pushed
-30 pushed
-20 pushed
-Current state of stack:
-20, 30, 10, 
-20 poped
-After deleting state of stack:
-30, 10
+enter choice (1,2 & 3 for push, pop & traverse):
+1
+enter value: 12
+12 pushed
+1
+enter value: 342
+342 pushed
+1
+enter value: 123
+123 pushed
+3
+123, 342, 12, 
+2
+123 poped
+3
+342, 12,
 */

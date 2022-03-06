@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "1MERSOR.C": "cpp",
-        "SETOPERA.C": "cpp"
+        "SETOPERA.C": "cpp",
+        "BINARY1.C": "cpp",
+        "BINARYSE.C": "cpp"
     }
 }
