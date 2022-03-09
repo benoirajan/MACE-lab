@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 
 struct node {
     int data;
@@ -8,8 +7,10 @@ struct node {
 };
 
 struct node *head = NULL;
-struct node *current = NULL;
 
+int isEmpty() {
+    return head == NULL;
+}
 void del(){
     if(isEmpty()){
         printf("Array ius emptu");
@@ -45,10 +46,6 @@ void insert(int data) {
     printf("%d inserted\n",data);
 }
 
-//is list empty
-int isEmpty() {
-    return head == NULL;
-}
 
 void main() {
     insert(10);
@@ -57,6 +54,10 @@ void main() {
     printf("Current state of list:\n");
     print();
     del();
+    del();
+    del();
+    del();
+    insert(12);
     printf("After deleting state of list:\n");
     print();
 }

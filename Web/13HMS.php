@@ -16,7 +16,7 @@ if (!$conn) {
     $conn->query("USE " . $db);
 
     //table creation
-    $sql = "CREATE TABLE usr(
+    $sql = "CREATE IF NOT EXISTS TABLE usr(
         id INT PRIMARY KEY,
         name VARCHAR(20),
         dob DATE,

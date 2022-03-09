@@ -7,7 +7,6 @@ struct node {
 };
 
 struct node *head = NULL;
-struct node *current = NULL;
 
 //is list empty
 int isEmpty() {
